@@ -1,0 +1,112 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #c9caff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  background: #ffffff;
+  padding: 20px;
+  width: 500px;
+  border-radius: 15px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+}
+.task {
+  outline: 2px solid #859bff;   /* warna ungu */
+  outline-offset: -4px;         /* biar outline masuk ke dalam kotak */
+}
+
+.card {
+  outline: 2px solid #10b981;   /* garis hijau */
+  outline-offset: 4px;          /* supaya tidak menempel langsung */
+}
+
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #000d9a;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-container input,
+.input-container select {
+  padding: 10px;
+  border: 1px solid #b80000eb;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.input-container button {
+  padding: 10px 15px;
+  border: rgb(255, 0, 0);
+  background: #3175ff;
+  color: rgb(255, 255, 255);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background: #2980b9;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #ecf0f1;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-info {
+  flex: 1;
+  cursor: pointer;
+}
+
+.task-info span {
+  display: block;
+}
+
+.task-name {
+  font-weight: bold;
+}
+
+.task-date {
+  font-size: 1px;
+  color: gray;
+}
+
+li.completed .task-name {
+  text-decoration: line-through;
+  color: rgb(91, 91, 91);
+}
+
+.delete-btn {
+  background: #e90000;
+  color: white;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #ff2b14;
+}
